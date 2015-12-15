@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>woqu.ajax</title>
+</head>
+<body>
+	<button id="ajax">请求</button>
+</body>
+<script src="woqu.ajax.js"></script>
+<script>
+	var btn = document.getElementById('ajax');
+	btn.onclick = function(){
+		woqu.post('ajax.php',{name:'ajax12'},function(re){
+			
+			console.log(re);
+		});
+	}
+</script>
+</html>

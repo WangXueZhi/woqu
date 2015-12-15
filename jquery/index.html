@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>woqu.ajax</title>
+	<link rel="stylesheet" href="woqu.jquery.css">
+</head>
+<body>
+	<button id="ajax">请求</button>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="jquery.wait.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#ajax').on('click',function(){
+			var option = {
+				style:'',
+				text:'',
+				anistyle:''
+			}
+			$.showWait(option);
+		})
+	})
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>类的继承</title>
+</head>
+<body>
+</body>
+<script src="mtol.interface.js"></script>
+<script>
+	function Person(name,age){
+		this.name = name;
+		this.age = age;
+	}
+
+	Person.prototype.show = function(){
+		console.log('my name is '+this.name);
+		console.log('my age is '+this.age);
+	}
+
+	function Student(name,age){
+		//继承属性
+		Person.call(this,name,age);
+	}
+
+	//原型继承
+	mtol.interface(Person,Student);
+
+	var st1 = new Student('xiao',18);
+</script>
+</html>
