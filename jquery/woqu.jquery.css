@@ -243,3 +243,108 @@
 100%   { -webkit-transform: translate(0px,2px) scale(1);}
 }
 /* wait one ani end */
+
+/* text ani start*/
+.ani-fade-in {
+  opacity: 0;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: fade-in;
+  -moz-animation-duration: 3s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ani-scale-up {
+  -webkit-animation-name: scale-up;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: scale-up;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: scale-up;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes scale-up {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -moz-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* text ani end */
